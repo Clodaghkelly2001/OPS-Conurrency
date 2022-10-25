@@ -12,7 +12,7 @@ public class HelloServer {
 	public static void main(String[] args) throws Exception {
 		
 		Socket socket;
-		ServerSocket serverSocket = new ServerSocket(2000);
+		ServerSocket serverSocket = new ServerSocket(1562);
 		
 		while(true){
 			

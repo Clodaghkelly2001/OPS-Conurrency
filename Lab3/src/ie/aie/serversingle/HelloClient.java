@@ -7,12 +7,13 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.util.Scanner;
 
+
 public class HelloClient {
 
 	public static void main(String[] args) throws Exception {
 		
-		InetAddress inet = InetAddress.getByName("localhost");
-		Socket socket = new Socket(inet, 2000);
+		InetAddress inet = InetAddress.getByName("192.168.56.1");
+		Socket socket = new Socket(inet, 1562);
 		
 		OutputStream out = socket.getOutputStream();
 		PrintWriter p = new PrintWriter(out);
